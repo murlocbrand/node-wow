@@ -1,0 +1,10 @@
+{
+  "name": "wow",
+  "version": "0.0.0",
+  "description": "WoW addon installer",
+  "author": "smeets",
+  "dependencies" : {
+    "request" : "*",
+    "unzip" : "*"
+  }
+}

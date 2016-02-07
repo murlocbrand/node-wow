@@ -1,0 +1,143 @@
+body, html {
+  background-color : #EFEFEF;
+  color: #383838;
+
+  font-family: 'Open Sans';
+  font-weight: 400;
+
+  max-height: 100%;
+}
+
+.emph {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+p {
+  margin : 0;
+  letter-spacing: 0.0625em;
+}
+
+.edit {
+  display: flex;
+}
+
+.title {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  background-color : #FFF;
+}
+
+#curDir {
+  border-bottom: dashed 1px #AAA;
+}
+
+#curDir:hover {
+  cursor: pointer;
+}
+
+.panel {
+  background-color : #FFF;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.box {
+  box-shadow: 0px 2px #DDD;
+  margin-bottom: 4px;
+}
+
+.panel > div, .panel > span {
+  border-radius: 4px;
+  padding: 4px;
+  
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.align-right {
+  justify-content: flex-end;
+}
+
+.panel > div:hover {
+  background-color : #EEE;
+  transition: ease 0.25s background-color;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.success:hover {
+  background-color : #2B2 !important;
+  transition: ease 0.25s background-color;
+}
+
+.danger:hover {
+  background-color : #E22 !important;
+  transition: ease 0.25s background-color;
+}
+
+#addon-name {
+  border-radius: 4px;
+  font-size: 1.2em;
+  border: none;
+  border-bottom: 1px dashed #AAA;
+  outline: none !important;
+  transition: ease 0.25s background-color;
+}
+
+#addon-name:active {
+  background-color : #AAA;
+}
+
+#addon-name:hover {
+  background-color : #EEE;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex > div {
+
+}
+
+#addon-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.addon-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  height : 32px;
+}
+
+.addon-title, .addon-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items : center;
+
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+.btn {}
+
+.btn:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn-default {
+  font-size: 32px;
+  margin-left: 8px;
+}
+
+.btn-small {
+  font-size: 10px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='css/opensans.css'>
+    <link rel='stylesheet' href='css/ionicons.css'>
+    <link rel='stylesheet' href='css/modal.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <title>node-wow</title>
+  </head>
+  <body>
+    <aside id="addon-popup" class="modal-popup">
+      <h2>Install New Addon</h2>
+      <input id='addon-name' placeholder='addon-name'>
+      <div class='panel flex align-right'>
+        <div id='ok-modal' class='clickable success'>Install</div>
+        <div id='close-modal' class='clickable danger'>Close</div>
+      </div>
+    </aside>
+
+    <div class='modal-contents'>
+      <div class='panel flex box'>
+        <span class='title'>World of Warcraft:</span>
+        <div id='curDir'><script>document.write(process.env.WOW_PATH)</script></div>
+      </div>
+
+      <div id='action-list' class='panel flex box'>
+        <div id='install' class='emph clickable'>
+          <i class='ion-android-add'></i> Install
+        </div>
+        <div id='update-all' class='emph clickable'>
+          <i class='ion-android-download'></i> Update All
+        </div>
+      </div>
+      <div id='addon-list' class='panel flex box'></div>
+    </div>
+
+    <div class="modal-cover"></div>
+
+    <script src='js/zepto.js'></script>
+    <script src='js/velocity.min.js'></script>
+    <script src='js/velocity.ui.js'></script>
+    <script src='js/modal.js'></script>
+    <script src='js/script.js'></script>
+  </body>
+</html>
